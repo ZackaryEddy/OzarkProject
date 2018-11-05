@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wild River Rapids</title>
+    <link rel="icon" href="https://pbs.twimg.com/media/C2Yrba5UQAA-_ai.jpg:large">
+    <link rel= "stylesheet" type= "text/css" href="style.css">
+    <style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.show {display:block;}
+
+
+		
+		
+		
+		
+	   
+		
+    </style>
+	
+	
+
+	<script>
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+<!----script for pizza button ---------------------------------------------------------------------->
+
+
+
+function mypizzaFunction() {
+    document.getElementById("mypizzabtn").classList.toggle("show");
+	
+}
+
+function myburgerFunction(){
+document.getElementById("myburgerbtn").classList.toggle("show")
+}
+
+function myhotdogFunction() {
+    document.getElementById("myhotdogbtn").classList.toggle("show");
+	
+}
+
+function myfriesFunction(){
+document.getElementById("myfriesbtn").classList.toggle("show")
+}
+
+function mycookiesFunction() {
+    document.getElementById("mycookiesbtn").classList.toggle("show");
+	
+}
+
+function mysandFunction(){
+document.getElementById("mysandbtn").classList.toggle("show");}
+
+
+// Close the dropdown menu if the user clicks outside of it
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+<!----script for pizza button ---------------------------------------------------------------------->
+</script>
+	
+	
+	
+</head>
+
+<body>
+    <div id="all-contents">
+        <nav>
+            <!--<header>Wild River Rapids</header-->
+            <img src = "assets/rapidTabIcon.png"  height = "52" width = "52" alt = "logo" />
+            <img src = "assets/rapidTabIcon.png"  height = "52" width = "52" alt = "logo" />
+            <header></header>
+
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Equipment Rentals</a></li>
+                <li><a href="store.html">Country Store</a></li>
+                <li><a href="snackBar.html">Snack Bar</a></li>
+                <li><a href="guide.html">Guides</a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content">
+			<div class="snacks">
+                    <a href="#bottom" id="top" style="font-size:12px; float:right;" >Go to bottom</a>
+		   
+		      <center><img src="http://walnuthighschoolfootball.com/wp-content/uploads/snackbar.jpg" alt="snack bar" style=" "></center>
+			
+			<p style=" text-align: left">
+		   Come and stop by the Wild River Rapids snackbar for a quick meal. Tired of the rapids or need a quick midnight snack, the snack bar is open 24/7. The snack bar has a wide range of items from drinks to snacks to meals. Get a nice cold drink from our wide selection and a bag of chips or sandwich.</br></p>
+		                       <p style="text-align: center;"></br>The snack bar is stocked daily with items such as:</p>
+							   
+			    			<table cellpadding="50">
+							<!-------------------pizza-------------->
+							
+							<tr>
+							<td><img src="http://www.cicis.com/media/1138/pizza_trad_pepperoni.png" alt="pizza" style="height: 100px; width: 150px; ">pizza with varying toppings</br>
+							<div class="dropdown">
+  <button onclick="mypizzaFunction()" class="dropbtn">Toppings</button>
+		<div id="mypizzabtn" class="dropdown-content">
+ <table cellpadding="1" border="10px">
+   <tr><td> Pepporoni</td><td> Sausage</td><tr>
+    <tr><td>Mushrooms</td><td>    Bacon</td></tr>
+	<tr><td>Onions </td>      <td>Ham</td></tr>
+	<tr><td>Peppers </td>     <td>Anchovies</td></tr>
+	</table>
+	
+	
+		</div>
+</div>
+</td>
+								<!---------------burger----------->
+							<td><img src="http://www.drodd.com/images15/burger15.png" alt="burger" style="height: 100px; width: 150px; ">burger with never frozen beef
+							<div class="dropdown">
+  <button onclick="myburgerFunction(); " class="dropbtn">Ingredients</button>
+  <div id="myburgerbtn" class="dropdown-content">
+    <table cellpadding="1" border="10px">
+   <tr><td> Ketchup</td><td> Mustard</td><tr>
+    <tr><td>Mayo</td><td>    Bacon</td></tr>
+	<tr><td>Onions </td>      <td>Lettuce</td></tr>
+	<tr><td>Pickles </td>     <td>Cheese</td></tr>
+	</table>
+	
+  </div>
+</div>
+</td>
+							
+							<!------------------hotdog---------->
+							<td><img src="http://rustlersonline.com/wp-content/uploads/HotDog.png" alt="hotdog" style="height: 100px; width: 200px; ">quickest snack to prep and eat</br>
+							<div class="dropdown">
+  <button onclick="myhotdogFunction()" class="dropbtn">Toppings</button>
+  <div id="myhotdogbtn" class="dropdown-content">
+    <table cellpadding="1" border="10px">
+   <tr><td> Ketchup</td><td> Shredded Cheese</td><tr>
+    <tr><td>Mayo</td><td>    BBQ Sauce</td></tr>
+	<tr><td>Mustard </td>      <td>Pickle Relish</td></tr>
+	<tr><td>Chili </td>     <td>Honey Mustard</td></tr>
+	</table>
+	
+  </div>
+</div>
+</td>
+</tr>
+							
+							<!-----------fries----------->
+							<tr>
+	<td><img src="http://www.texaschickenmalaysia.com/menu/sides-french-fries.png" alt="french fries" style="height: 120px; width: 170px; ">Lightly salted french fries</br><div class="dropdown">
+  <button onclick="myfriesFunction()" class="dropbtn">Fries</button>
+  <div id="myfriesbtn" class="dropdown-content">
+     <table cellpadding="1" border="10px" >
+   <tr><td> Shoestring</td><td> Curly</td><tr>
+    <tr><td>Crinkle-cut</td><td>    Chili cheese</td></tr>
+	<tr><td>Steak-cut </td>      <td>Sweet Potato</td></tr>
+	<tr><td>Waffle </td>     <td>Loaded</td></tr>
+	</table>
+	
+  </div>
+</div>
+</td>
+							
+							<!--------------------cookies------------>
+						<td><img src="http://pngimg.com/upload/cookie_PNG13641.png" alt="cookies" style="height: 100px; width: 120px; ">deliciously scrumptious cookies
+						<div class="dropdown">
+  <button onclick="mycookiesFunction()" class="dropbtn">Cookies</button>
+  <div id="mycookiesbtn" class="dropdown-content">
+     <table cellpadding="1" border="10px">
+   <tr><td> Sugar</td><td> Oatmeal</td><tr>
+    <tr><td>Chocolate chip</td><td>    Cinnamon</td></tr>
+	<tr><td>Almond </td>      <td>Peanut Butter</td></tr>
+	<tr><td>Raisin </td>     <td>Caramel</td></tr>
+	</table>
+	
+  </div>
+</div>
+</td>
+						<!----------------sandwich---------->	
+							<td><img src="http://www.pngall.com/wp-content/uploads/2016/03/Sandwich-PNG-File.png" alt="sandwich" style="height: 120px; width: 170px">sandwiches of much variety
+							</br><div class="dropdown">
+  <button onclick="mysandFunction()" class="dropbtn">Ingredients</button>
+  <div id="mysandbtn" class="dropdown-content">
+     <table cellpadding="1" border="10px">
+   <tr><td> Lettuce</td><td> Turkey</td><tr>
+    <tr><td>Mayo</td><td>    Ham</td></tr>
+	<tr><td>Mustard </td>      <td>Roast Beef</td></tr>
+	<tr><td>Ketchup </td>     <td>Chicken</td></tr>
+	</table>
+	
+  </div>
+</div>
+</td>
+</tr>
+</table>
+
+		   <a href="#top" id="bottom" style="float:right;  bottom:0; right:0; clear:right; font-size:12px; ">Go to top</a>
+		   </div>
+</div>
+    </main>
+
+
+        
+
+
+
+
+
+
+</body>
+
+</html>

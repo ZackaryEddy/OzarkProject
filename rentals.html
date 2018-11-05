@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wild River Rapids</title>
+    <link rel="icon" href="https://pbs.twimg.com/media/C2Yrba5UQAA-_ai.jpg:large">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div id="all-contents">
+<nav>
+        <!--<header>Wild River Rapids</header-->
+    <img src = "assets/rapidTabIcon.png"  height = "52" width = "52" alt = "logo" />
+    <img src = "assets/rapidTabIcon.png"  height = "52" width = "52" alt = "logo" />
+        <header></header>
+
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Equipment Rentals</a></li>
+            <li><a href="store.html">Country Store</a></li>
+            <li><a href="snackBar.html">Snack Bar</a></li>
+            <li><a href="guide.html">Guides</a></li>
+
+
+
+        </ul>
+    </nav>
+    <main>
+
+        <div align="center" style="position:absolute; left: 250px; bottom: 200px">
+            <img src="assets/kings-river.JPG" height="350px" width="350px">
+            </div>
+        <div align="center" style="position:absolute; left: 250px; top: 1450px">
+            <img src="assets/rental-river.jpg" height="350px" width="350px">
+        </div>
+        <div align="center" style="position:absolute; left: 250px; top: 900px">
+            <img src="assets/rental-river2.jpg" height="350px" width="350px">
+        </div>
+        <h1>Welcome to Wild River Rapids Rentals!</h1>
+        <div class="content">
+            <form action="form.php" id="form.php" method="post">
+                <table style=" width: 50%; margin-left: 20vh;">
+                    <tr>
+                        <th>
+                            <h1> Renter Info: </h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Date
+                            </h2>
+                        </td>
+
+                        <td>
+                            <h3>
+                                <input type="date" name="date" required autofocus placeholder="MM/DD/YYYY">
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                First Name:
+                            </h2>
+                        </td>
+                        <td>
+                            <h3>
+                                <input maxlength="40" type="text" name="tFName" required placeholder="First Name">
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Last Name:
+                            </h2>
+                        </td>
+                        <td>
+                            <h3>
+                                <input maxlength="40" type="text" name="tLName" required placeholder="Last Name">
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Age:
+                            </h2>
+                        </td>
+                        <td>
+                            <h3>
+                                <input type="number"  maxlength="3" min="1" max="150" name="age"  required>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Gender:
+                            </h2>
+                        </td>
+                        <td>
+                            <h3>
+                                <input type="radio" name="gender" required value="Male"> Male<br/>
+                                <input type="radio" name="gender" value="Female"> Female<br/>
+                                <input type="radio" name="gender" value="Other"> Other <br/>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h1> Equipment Info: </h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Boat Type: </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Number of Canoes?
+                            </h2>
+                            <h5>
+                                *Maximum 20
+                            </h5>
+                        </td>
+                        <td>
+                            <h3>
+                                <input type="number"  maxlength="2" min="0" max="20" name="canoe"  required>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Number of Kayaks?
+                            </h2>
+                            <h5>
+                                *Maximum 20
+                            </h5>
+                        </td>
+                        <td>
+                            <h3>
+                                <input type="number"  maxlength="2" min="0" max="20" name="kayak"  required>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Number of Rafts?
+                            </h2>
+                            <h5>
+                                *Maximum 20
+                            </h5>
+                        </td>
+                        <td>
+                            <h3>
+                                <input type="number"  maxlength="2" min="0" max="20" name="rafts"  required>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>
+                                Contact Information:
+                            </h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Phone Number:
+                            </h2>
+                        </td>
+                        <td>
+                            <h3>
+                                <input type='tel'name="phone" pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}' title='Phone Number (Format: (999)999-9999)'>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Email:
+                            </h2>
+                        </td>
+                        <td>
+                            <h3>
+                                <input type="email" maxlength="40"  name="email" required>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h1>
+                                Payment:
+                            </h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Card Number:
+                            </h2>
+                        </td>
+                        <td>
+                            <input type="number" maxlength="16" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' name="cardNo" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h1>
+                                Terms & Agreements:
+                            </h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>
+                                Do you agree with the terms:
+                            </h2>
+                        </td>
+                        <td>
+                            <h3>
+                                <input type="checkbox" name="termsCheck" value="Yes" required> Yes <br/>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>
+                                <div style="text-align: center;">
+                                    <input type="submit" value="Submit">
+                                    &nbsp; &nbsp; &nbsp;
+                                    <input type="reset" value="Clear">
+                                </div>
+                            </h3>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+        </div>
+    </main>
+</div>
+</body>
+</html>
